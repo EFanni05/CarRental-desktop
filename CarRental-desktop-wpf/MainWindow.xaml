@@ -1,0 +1,21 @@
+﻿<Window x:Class="CarRental_desktop_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarRental_desktop_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<Grid Loaded="Onload">
+		<DataGrid x:Name="gridData" HorizontalAlignment="Left" Height="343" Margin="31,58,0,0" VerticalAlignment="Top" Width="723" AutoGenerateColumns="False">
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="Rendszám" Binding="{Binding License_plate_number}"/>
+				<DataGridTextColumn Header="Posted" Binding="{Binding Brand}"/>
+				<DataGridTextColumn Header="User" Binding="{Binding Model}"/>
+				<DataGridTextColumn Header="Title" Binding="{Binding Daily_cost}"/>
+			</DataGrid.Columns>
+		</DataGrid>
+		<Button Content="Törlés" HorizontalAlignment="Left" Height="27" Margin="34,17,0,0" VerticalAlignment="Top" Width="180"/>
+      
+	</Grid>
+</Window>

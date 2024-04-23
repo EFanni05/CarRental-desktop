@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33717.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental-desktop_cli", "CarRental-desktop\CarRental-desktop_cli.csproj", "{780BA0C6-8F48-4F33-9C18-1C04427EE1D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental-desktop-wpf", "CarRental-desktop-wpf\CarRental-desktop-wpf.csproj", "{68399E6B-8640-4F86-8C30-3F67CAE0E565}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{780BA0C6-8F48-4F33-9C18-1C04427EE1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{780BA0C6-8F48-4F33-9C18-1C04427EE1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{780BA0C6-8F48-4F33-9C18-1C04427EE1D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68399E6B-8640-4F86-8C30-3F67CAE0E565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68399E6B-8640-4F86-8C30-3F67CAE0E565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68399E6B-8640-4F86-8C30-3F67CAE0E565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68399E6B-8640-4F86-8C30-3F67CAE0E565}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

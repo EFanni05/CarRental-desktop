@@ -20,7 +20,7 @@ namespace CarRental_desktop
 			cars = (List<Car>?)GetCars();
 		}
 
-	 public IList<Car>? GetCars()
+		private IList<Car>? GetCars()
 		{
 			var response = _httpClient.GetAsync("/cars").Result;
 			response.EnsureSuccessStatusCode();
@@ -30,12 +30,12 @@ namespace CarRental_desktop
 
 		public string Olcsobb()
 		{
-			return $"20.000 Ft-nál olcsóbb napidíjú autók száma: {cars.FindAll(x => x.daily_cost < 20000).Count}";
+			return $"20.000 Ft-nál olcsóbb napidíjú autók száma: {cars.FindAll(x => x.Daily_cost < 20000).Count}";
 		}
 
 		public string VanE26()
 		{
-			if(cars.Find(x => x.daily_cost > 26000) != null)
+			if(cars.Find(x => x.Daily_cost > 26000) != null)
 			{
 				return "Van az adatok között 26.000 Ft-nál drágább napidíjú autó";
 			}
@@ -49,7 +49,7 @@ namespace CarRental_desktop
 			{
 				return "Nincs ilyen autó";
 			}
-			return a.daily_cost < 26000 ? "A megadott autónapidíja nagyobb mint 25.000 Ft" : "A megadott autónapidíja nem nagyobb mint 25.000 Ft";
+			return a.Daily_cost < 26000 ? "A megadott autónapidíja nagyobb mint 25.000 Ft" : "A megadott autónapidíja nem nagyobb mint 25.000 Ft";
 		}
 
 		public void findbards()
